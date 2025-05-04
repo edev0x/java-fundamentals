@@ -35,7 +35,6 @@ public class Lambdas {
         System.out.println("Resultado de la operación final: " + operation.operate(5, 3));
     }
 
-    @FunctionalInterface
     interface Calculator {
         int operate(int a, int b);
     }
