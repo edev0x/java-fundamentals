@@ -3,6 +3,79 @@ A continuación, se detalla una lista de mejores prácticas a seguir al programa
 
 Este documento está basado en la guía de programación estándar usado por **Google** y parte de las definiciones del equipo de **Oracle**, existen varías guías o estándares pero considero que estas son las mejores a seguir. 
 
+## Un par de normas importantes. 🤓☝️
+Esta es una lista breve de normas que considero *las más importantes* y las cuáles he aprendido durante mi trayectoria laboral en la industria del Software. 
+
+1. **Nombres descriptivos**: Utiliza nombres claros y significativos para clases, métodos y variables.
+Por ejemplo, deseamos describir una clase que se encarga de las transacciones en una billetera:
+
+```java
+// Mala práctica
+public class Trnscts {
+    public void s(); // ¿qué significa "s()"? 
+}
+
+// Buena práctica
+public class Transactions {
+    public void save();
+    public void rollback();
+}
+```
+
+
+2. **Consistencia en la indentación**: Aplica una indentación uniforme, preferiblemente usando espacios en lugar de tabulaciones. Comúnmente se utilizan 4 espacios de indentación.
+3. **Comentarios útiles**: Escribe comentarios que expliquen el propósito del código, no lo obvio. Tú código debe ser lo suficienteme legible para que otros desarrolladores no tengan problemas al leerlo o intentar modificarlo.
+4. **Evita código redundante**: Reutiliza código siempre que sea posible para evitar duplicación.
+5. **Nombra tus variables y métodos siempre en INGLÉS**: Nombrar variables y métodos en inglés es una práctica común en el desarrollo de software, ya que el inglés es el idioma predominante en la industria tecnológica. Esto facilita la colaboración entre equipos internacionales y mejora la comprensión del código por parte de otros desarrolladores.
+
+```java
+// Mala práctica
+public class Fecha {
+    public int obtenerAñoActual() {
+        // ...
+    }
+}
+
+// Buena práctica
+public class DateUtils {
+    public int getCurrentYear() {
+        // ...
+    }
+}
+```
+6. **Evita el uso de números mágicos**: Declara constantes con nombres significativos en lugar de valores literales.
+
+```java
+// Mala práctica
+public class Circle {
+    public double calculateArea(double radius) {
+        return radius * radius * 3.14159; // ¿Qué significa 3.14159?
+    }
+}
+
+// Buena práctica
+public class Circle {
+    private static final double PI = 3.14159; // Constante con nombre significativo
+
+    public double calculateArea(double radius) {
+        return radius * radius * PI;
+    }
+}
+```
+7. **Nombres consistentes de paquetes**: Es común durante el desarrollo de aplicaciones en java que no sepamos como nombrar los paquetes o folders que guardaran nuestras clases, pero es recomendado y adecuado el mantener los nombres de estos paquetes en minúsculas, sin acentos, ni espacios en blanco o guiones.
+
+```java
+// Mala práctica
+package com.organizacion-devs.utils;
+package com.organizacion_devs.utils;
+package Com.OrganizacionDevs.Utils;
+
+// Buena práctica
+package com.organizacion.devs.utils;
+```
+
+Estas normas son esenciales para garantizar que el código sea comprensible, mantenible y colaborativo.
+
 ## Referencias:
 > [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)
 
