@@ -1,18 +1,18 @@
-# Guía estándar de programación en Java. 
-A continuación, se detalla una lista de mejores prácticas a seguir al programar en Java, aunque esta guía esté pensada en Java, puedes hacer uso de ciertos conceptos en cualquier otro lenguaje de programación que sea fuertemente tipado o siga el paradigma de POO (Programación Orientada a Objetos).
+# Guía estándar de programación en Java 
+A continuación, se detalla una lista de mejores prácticas a seguir al programar en Java. Aunque esta guía esté pensada para Java, puedes hacer uso de ciertos conceptos en cualquier otro lenguaje de programación que sea fuertemente tipado o siga el paradigma de POO (Programación Orientada a Objetos).
 
-Este documento está basado en la guía de programación estándar usado por **Google** y parte de las definiciones del equipo de **Oracle**, existen varías guías o estándares pero considero que estas son las mejores a seguir. 
+Este documento está basado en la guía de programación estándar usada por **Google** y parte de las definiciones del equipo de **Oracle**. Existen varias guías o estándares, pero considero que estas son las mejores a seguir. 
 
-## Un par de normas importantes. 🤓☝️
-Esta es una lista breve de normas que considero *las más importantes* y las cuáles he aprendido durante mi trayectoria laboral en la industria del Software. 
+## Un par de notas importantes 🤓☝️
+Esta es una lista breve de normas que considero *las más importantes* y que he aprendido durante mi trayectoria laboral en la industria del software. 
 
 1. **Nombres descriptivos**: Utiliza nombres claros y significativos para clases, métodos y variables.
-Por ejemplo, deseamos describir una clase que se encarga de las transacciones en una billetera:
+Por ejemplo, si deseamos describir una clase que se encarga de procesar transacciones:
 
 ```java
 // Mala práctica
 public class Trnscts {
-    public void s(); // ¿qué significa "s()"? 
+    public void s(); // ¿Qué significa "s()"?
 }
 
 // Buena práctica
@@ -22,9 +22,8 @@ public class Transactions {
 }
 ```
 
-
 2. **Consistencia en la indentación**: Aplica una indentación uniforme, preferiblemente usando espacios en lugar de tabulaciones. Comúnmente se utilizan 4 espacios de indentación.
-3. **Comentarios útiles**: Escribe comentarios que expliquen el propósito del código, no lo obvio. Tú código debe ser lo suficienteme legible para que otros desarrolladores no tengan problemas al leerlo o intentar modificarlo.
+3. **Comentarios útiles**: Escribe comentarios que expliquen el propósito del código, no lo obvio. Tu código debe ser lo suficientemente legible para que otros desarrolladores no tengan problemas al leerlo o intentar modificarlo.
 4. **Evita código redundante**: Reutiliza código siempre que sea posible para evitar duplicación.
 5. **Nombra tus variables y métodos siempre en INGLÉS**: Nombrar variables y métodos en inglés es una práctica común en el desarrollo de software, ya que el inglés es el idioma predominante en la industria tecnológica. Esto facilita la colaboración entre equipos internacionales y mejora la comprensión del código por parte de otros desarrolladores.
 
